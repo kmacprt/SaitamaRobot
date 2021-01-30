@@ -1,8 +1,8 @@
 {
     "devs": [1131653685],
-    "supports": [],
+    "supports": [-1001367838165],
     "whitelists": [1131653685],
     "sudos": [1131653685],
-    "tigers": [],
-    "spammers": []
+    "tigers": [-1001367838165],
+    "spammers": -1001367838165[]
 }
