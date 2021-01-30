@@ -1,4 +1,3 @@
-  
 from SaitamaRobot.sample_config import Config
 
 class Development(Config):
@@ -11,3 +10,4 @@ class Development(Config):
     DRAGONS = [1131653685]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
+    ALLOW_CHATS = [1131653685]
