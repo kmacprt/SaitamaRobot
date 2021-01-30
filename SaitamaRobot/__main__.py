@@ -73,24 +73,24 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+*Hi* {}, *my* *name* *is* {}! 
+*I am an Anime themed group management bot.👀*
+*Build by weebs for weebs, I specialize in managing anime and similar themed groups.*
+*You can find my list of available commands with* 👮‍♂️/help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+**Hey there! My name is** *{}*.
+*I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of* \
+*the things I can help you with*.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+**Main** *commands available*:
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+ ⚡️ /help: _PM's you this message_.
+ ⚡️ /help <module name>: _PM's you info about that module._
+ ⚡️ /settings:
+   💥 in PM: _will send you your settings for all supported modules._
+   💥 in a group: _will redirect you to pm, with all that chat's settings._
 
 
 {}
@@ -100,12 +100,9 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/6525d89de5b72003d80fa.png"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+DONATE_STRING = """This Project Opensource More Info @lkhitech @kavinduaj."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,7 +219,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
+                                text="🤡 Add Mr.Joker to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,24 +227,24 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support Group",
+                                text="🔔 Support Channel",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                text="🦹 Creator",
+                                url="https://t.me/kavinduaj",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                                text="👨🏻‍💻 Command",
+                                url="http://t.me/%7B%7D?start=help",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                text="👥 Supported Group",
+                                url="https://t.me/linksharplatform",
                             )
                         ],
                     ]
@@ -584,7 +581,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1131653685 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
