@@ -11,3 +11,5 @@ class Development(Config):
     LOAD = []
     NO_LOAD = ['translation']
     ALLOW_CHATS = [1131653685]
+    AI_API_KEY = "1a07c3a5bff02e4cc38b0ff89fcb05fc4b1675f357844ee0b2604e9d7d9769ba27efb72057e4759cd4dd4118959fb02089f641d7bb06c1532698c48789bd8250"
+    TIME_API_KEY = "R5GZ4QBTQAEE"
